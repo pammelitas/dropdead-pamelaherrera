@@ -80,6 +80,19 @@ header .logo{
     flex-basis: 30%;
 }
 
+.logo img{
+    animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+      70% { transform:translateY(0%); }
+      80% { transform:translateY(-15%); }
+      90% { transform:translateY(0%); }
+      95% { transform:translateY(-7%); }
+      97% { transform:translateY(0%); }
+      99% { transform:translateY(-3%); }
+      100% { transform:translateY(0); }
+  }
+
 header .menu{
     flex-basis: 60%;  
     justify-content: space-between;
@@ -1463,6 +1476,10 @@ footer div{
             margin-left: 30px;
         }
 }
+
+*/
+
+
 
 
 
