@@ -5,85 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Dropdead</title>
 </head>
 
-<body>
+<body id="body-contact">
     <header>
-        <a href="/index.html">
-            <img src="../images/dropdead.png" alt="" width="300px">
-        </a>
-        <!-- MENU NAV BAR-->
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="./clothing.html">Clothing</a></li>
-            <li><a href="./accessories.html">Accessories</a></li>
-            <li><a href="./collections.html">Collections</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li>
-                <a href="#">
-                    <img src="/assets/images/profile.png" alt="My Account" height="20px">
+        <nav class="nav-bar flex-row container">
+            <picture class="logo">
+                <a href="../../index.html">
+                    <img src="../images/dropdead2.png" alt="Dropdead Logo" width="300px">
                 </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/assets/images/search.png" alt="Search" height="20px">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/assets/images/cart.png" alt="Shopping bag" height="20px">
-                </a>
-            </li>
-        </ul>
+            </picture>
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a href="../views/collections.html" class="menu__link">Clothing</a></li>
+                <li class="menu__item">
+                    <a href="../views/accessories.html" class="menu__link">Accessories</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item">
+                            <a href="" class="sub-menu__link">Jewelry</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a href="" class="sub-menu__link">Belts</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a href="" class="sub-menu__link">Giftcard</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="../views/collections.html" class="menu__link">Collections</a></li>
+                <li class="menu__item">
+                    <a href="../views/contact.html" class="menu__link">Contact</a></li>
+            </ul>
+    
+    
+    <!--
+            <a class="nav-icon" href="#">
+                <img src="assets/images/profile2.png" alt="Account" height="20px">
+            </a>
+            <a class="nav-icon" href="#">
+                <img src="assets/images/search2.png" alt="Search" height="20px">
+            </a>
+            <a class="nav-icon" href="#">
+                <img src="assets/images/cart2.png" alt="Cart" height="20px">
+            </a>
+    -->
+            </ul>
+        </nav>
     </header>
     <!-- MAIN SECTION -->
-    <main>
-        <section>
-            <h1>Contact</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus delectus, veritatis odit dolore quae
-                hic, adipisci voluptatibus alias suscipit quos dicta corrupti error cum magnam nam similique ipsum!
-                Tenetur, provident.˜</p>
-        </section>
+    <main id="main-contact">
+            <h1>We'd love to hear from you!</h1>
         <!-- CONTACT FORM -->
-        <form action="mailto:pamelahd.1996@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name: </label>
-            <input type="text" name="text" id="name" placeholder="Name"> <br>
-            <br>
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" placeholder="E-mail">
-            <br>
-            <br>
-            <label for="date">Date of birth:</label>
-            <input type="date">
-            <br>
-            <br>
-            <label for="message">Your message: </label>
-            <br>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-            <br>
-            <br>
-            <input type="reset" value="Clear">
-            <input type="submit" value="Submit">
-        </form>
+        <div id="form">
+            <form id="contactus-form" action="mailto:pamelahd.1996@gmail.com" method="post" enctype="text/plain">
+                <div class="contact">
+                    <label for="name">Name: </label>
+                    <input type="text" name="text" id="name" placeholder ="Name">
+                </div>
+                <div class="contact">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="birth-contact">
+                    <label for="date">Date of birth:</label>
+                    <input type="date">
+                </div>
+                <div class="message-contact">
+                    <label for="message">Your message: </label>
+                    <textarea name="message" class="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+            </form>
+            <div class="button-contact">
+                <input class="button-contact1" type="reset" value="Clear">
+                <input class="button-contact2" type="submit" value="Submit">
+            </div>
+        </div>
     </main>
-    <br>
-    <br>
     <footer>
         <!-- FOOTER -->
         <!-- SOCIAL MEDIA LINKS -->
-        <a href="https://www.facebook.com/DROPDEADOFFICIAL/" target="blank">
-            <img src="../images/facebook.png" alt="" height="20px">
-        </a>
-        <a href="https://www.instagram.com/dropdeadofficial/?hl=en" target="blank">
-            <img src="../images/instagram.png" alt="" height="20px">
-        </a>
-        <a href="https://twitter.com/DropDeadUK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-            <img src="../images/twitter.png" alt="" height="20px">
-        </a>
-        <p>Dropdead ©</p>
+        <div class="social">
+            <a href="https://www.facebook.com/DROPDEADOFFICIAL/" target="blank">
+                <img src="../images/facebook2.png" alt="Facebook" height="20px">
+            </a>
+            <a href="https://www.instagram.com/dropdeadofficial/?hl=en" target="blank">
+                <img src="../images/instagram2.png" alt="Instagram" height="20px">
+            </a>
+            <a href="https://twitter.com/DropDeadUK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
+                <img src="../images/twitter2.png" alt="Twitter" height="20px">
+            </a>
+        </div>
+        <div class="brand">
+            <p>Dropdead ©</p>
+        </div>
     </footer>
-</body>
+</>
 
 </html>
