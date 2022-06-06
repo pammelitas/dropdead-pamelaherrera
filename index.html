@@ -5,84 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Dropdead</title>
 </head>
-<body id="body-index">
-<header>
-    <nav class="nav-bar flex-row container">
-        <picture class="logo">
-            <a href="index.html">
-                <img src="assets/images/dropdead2.png" alt="Dropdead Logo" width="300px">
+
+<body id="body-home">
+<!-- HEADER SECTION -->
+    <header class="header">
+        <nav>
+            <a href="#">
+                <a href="../../index.html">
+                    <img src="./assets/images/dropdead2.png" alt="Dropdead Logo" width="200px">
+                </a>
             </a>
-        </picture>
-        <ul class="menu flex-row">
-            <li class="menu__item">
-                <a href="assets/views/clothing.html" class="menu__link">Clothing</a></li>
-            <li class="menu__item">
-                <a href="assets/views/accessories.html" class="menu__link">Accessories</a>
-                <ul class="sub-menu">
-                    <li class="sub-menu__item">
-                        <a href="" class="sub-menu__link">Jewelry</a>
+
+            <div>
+                <ul>
+                    <li>
+                        <a href="/assets/views/clothing.html">Clothing</a>
                     </li>
-                    <li class="sub-menu__item">
-                        <a href="" class="sub-menu__link">Belts</a>
+                    <li>
+                        <a href="/assets/views/accessories.html">
+                            Accessories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Jewelry</a>
+                            <a class="dropdown-item" href="#">Belts</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Gift cards</a>
+                        </div>
                     </li>
-                    <li class="sub-menu__item">
-                        <a href="" class="sub-menu__link">Giftcard</a>
+                    <li>
+                        <a href="/assets/views/collections.html">Collections</a>
+                    </li>
+                    <li>
+                        <a href="assets/views/contact.html">Contact</a>
                     </li>
                 </ul>
-            </li>
-            <li class="menu__item">
-                <a href="assets/views/collections.html" class="menu__link">Collections</a></li>
-            <li class="menu__item">
-                <a href="assets/views/contact.html" class="menu__link">Contact</a></li>
-        </ul>
-
-
-<!--
-        <a class="nav-icon" href="#">
-            <img src="assets/images/profile2.png" alt="Account" height="20px">
-        </a>
-        <a class="nav-icon" href="#">
-            <img src="assets/images/search2.png" alt="Search" height="20px">
-        </a>
-        <a class="nav-icon" href="#">
-            <img src="assets/images/cart2.png" alt="Cart" height="20px">
-        </a>
--->
-        </ul>
-    </nav>
-</header>
+            </div>
+        </nav>
+    </header>
     <!-- MAIN SECTION: SUBSCRIBE -->
     <main id="main-home">
-        <div class="grid-layout-index">
-            <form id="contact-form" action="mailto:pamelahd.1996@gmail.com" method="post" enctype="text/plain">
+        <div class="container">
+            <form id="contact-form">
                 <label for="email"></label>
-                <input class="email-home" type="email" name="I'd like to join the cvlt" id="email" placeholder="Dropdead + 25%">
+                <input class="email-home" type="email" name="I'd like to join the cvlt" id="email"
+                    placeholder="Dropdead + 25%">
                 <input class="button" type="submit" value="JOIN THE CVLT">
             </form>
         </div>
     </main>
+
     <footer>
-        <div id="footer">
-        <!-- FOOTER -->
-        <!-- SOCIAL MEDIA LINKS -->
-        <div class="social">
-            <a href="https://www.facebook.com/DROPDEADOFFICIAL/" target="blank">
-                <img src="assets/images/facebook2.png" alt="Facebook" height="20px">
-            </a>
-            <a href="https://www.instagram.com/dropdeadofficial/?hl=en" target="blank">
-                <img src="assets/images/instagram2.png" alt="Instagram" height="20px">
-            </a>
-            <a href="https://twitter.com/DropDeadUK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-                <img src="assets/images/twitter2.png" alt="Twitter" height="20px">
-            </a>
+        <div>
+            <div class="social">
+                <a href="https://www.facebook.com/DROPDEADOFFICIAL/" target="blank">
+                    <img src="assets/images/facebook2.png" alt="Facebook" height="20px">
+                </a>
+                <a href="https://www.instagram.com/dropdeadofficial/?hl=en" target="blank">
+                    <img src="assets/images/instagram2.png" alt="Instagram" height="20px">
+                </a>
+                <a href="https://twitter.com/DropDeadUK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="blank">
+                    <img src="assets/images/twitter2.png" alt="Twitter" height="20px">
+                </a>
+                <div class="brand">
+                    <p>Dropdead ©</p>
+                </div>
+            </div>
         </div>
-        <div class="brand">
-            <p>Dropdead ©</p>
-        </div>
-    </div>
     </footer>
 </body>
 
@@ -91,48 +82,3 @@
 
 
 
-
-
-
-
-
-<!--
-
-header{
-    height: 60px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: red;
-}
-
-.nav-bar ul{
-    font-size: 35px;
-    float: right;
-    line-height: 60px;
-}
-
-.nav-bar a{
-    color: black;
-    margin-right: 50px;
-    margin-top: 20px;
-}
-
-.nav-bar a:hover{
-    color: #494450;
-}
-
-.nav-icon img{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    margin-top: -25px;
-    margin-right: -50px;
-}
-
-h1{
-    font-family: 'League-Spartan', sans-serif;
-    font-size: 50px;
-    margin: 0 50px;
-}
--->
