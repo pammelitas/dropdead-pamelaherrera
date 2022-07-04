@@ -5,60 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Dropdead</title>
 </head>
 
-<body id="body-home">
+<body id="body__home">
 <!-- HEADER SECTION -->
-    <header class="header">
-        <nav>
-            <a href="#">
-                <a href="../../index.html">
-                    <img src="./assets/images/dropdead2.png" alt="Dropdead Logo" width="200px">
-                </a>
-            </a>
+<div id="main__uno_grids">
+<header>
+    <nav>
+        <div>
+            <a class="header__navbar--logo" href="index.html">
+                <img src="assets/images/dropdead2.png" alt="Dropdead Logo">
+        </a>
+        <div class="displaynone">
+            <div id="main-menu">
+            <ul>
+                <li>
+                    <a href="assets/views/clothing.html">Clothing</a>
+                </li>
+                <li>
+                    <a href="assets/views/accessories.html">
+                        Accessories
+                    </a>
+                        <ul>
+                            <li><a class="dropdown-item" href="#">Jewelry</a></li>
+                            <li><a class="dropdown-item" href="#">Belts</a></li>
+                            <li><a class="dropdown-item" href="#">Gift cards</a></li> 
+                        </ul>
+                </li>
+                <li>
+                    <a href="assets/views/collections.html">Collections</a>
+                </li>
+                <li>
+                    <a href="assets/views/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </nav>
 
-            <div>
-                <ul>
-                    <li>
-                        <a href="/assets/views/clothing.html">Clothing</a>
-                    </li>
-                    <li>
-                        <a href="/assets/views/accessories.html">
-                            Accessories
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Jewelry</a>
-                            <a class="dropdown-item" href="#">Belts</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Gift cards</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="/assets/views/collections.html">Collections</a>
-                    </li>
-                    <li>
-                        <a href="assets/views/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <input type="checkbox" id="hamburger-input" class="burger-shower" />
+<label id="hamburger-menu" for="hamburger-input">
+    <nav id="sidebar-menu">
+        <h3>Menu</h3>
+        <ul>
+            <li>
+                <a href="assets/views/clothing.html">Clothing</a>
+            </li>
+            <li>
+                <a href="assets/views/accessories.html">
+                    Accessories
+                </a>
+                    <ul>
+                        <li><a class="dropdown-item" href="#">Jewelry</a></li>
+                        <li><a class="dropdown-item" href="#">Belts</a></li>
+                        <li><a class="dropdown-item" href="#">Gift cards</a></li> 
+                    </ul>
+            </li>
+            <li>
+                <a href="assets/views/collections.html">Collections</a>
+            </li>
+            <li>
+                <a href="assets/views/contact.html">Contact</a>
+            </li>
+        </ul>
+      </nav>
+    </label>
+    
+    <div class="overlay"></div>
+  </header>
     <!-- MAIN SECTION: SUBSCRIBE -->
-    <main id="main-home">
-        <div class="container">
-            <form id="contact-form">
+    <main>
+        <div class="main__container--contactform">
+            <form class="main__contact-form">
                 <label for="email"></label>
-                <input class="email-home" type="email" name="I'd like to join the cvlt" id="email"
-                    placeholder="Dropdead + 25%">
-                <input class="button" type="submit" value="JOIN THE CVLT">
+                <input class="contactform__email" type="email" name="I'd like to join the cvlt"
+                    placeholder="Subscribe to Dropdead + 25% off your first order" require>
+                <input class="contactform__button" type="submit" value="JOIN THE CULT">
             </form>
         </div>
     </main>
-
-    <footer>
-        <div>
-            <div class="social">
+<!-- FOOTER SECTION -->
+<footer>
+    <!-- SOCIAL MEDIA LINKS -->
+            <div class="footer__sociallinks">
                 <a href="https://www.facebook.com/DROPDEADOFFICIAL/" target="blank">
                     <img src="assets/images/facebook2.png" alt="Facebook" height="20px">
                 </a>
@@ -69,16 +104,10 @@
                     target="blank">
                     <img src="assets/images/twitter2.png" alt="Twitter" height="20px">
                 </a>
-                <div class="brand">
                     <p>Dropdead ©</p>
-                </div>
             </div>
         </div>
     </footer>
 </body>
 
 </html>
-
-
-
-
