@@ -73,6 +73,24 @@ header nav a:active{
     background-color: transparent;
 }
 
+.header__navbar--logo img{
+    animation: bounce 1.3s ease;
+      }
+    
+@keyframes bounce {
+          70% { transform:translateY(0%); }
+          80% { transform:translateY(-15%); }
+          90% { transform:translateY(0%); }
+          95% { transform:translateY(-7%); }
+          97% { transform:translateY(0%); }
+          99% { transform:translateY(-3%); }
+          100% { transform:translateY(0); }
+      }
+
+  .header__navbar--logo img:hover {
+    transform: scale(1.1);
+    }
+
 /* ================================================== INDEX SECTION ================================================== */
 #body__home{
     background-image: url(../../assets/images/background-index.jpeg);
@@ -108,11 +126,13 @@ header nav a:active{
     font-family: 'Horizon';
     font-size: 0.9em;
     border-style: inherit;
+    transition: all 1s ease 0s;
 }
 
 .contactform__button:hover{
-    background-color: #685c67;
+    background-color: #4d444c;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .contactform__button:active{
@@ -173,6 +193,7 @@ p{
     width: 150px;
     text-align: center;
     margin-left: -643px;
+    transition: all 1s ease 0s;
 }
 
 .clothing__button1{
@@ -181,6 +202,7 @@ p{
     border: solid 1px #716470;
     background-color: transparent;
     color: #574c56;
+    transition: all 1s ease 0s;
 }
 
 .clothing__button2{
@@ -192,21 +214,28 @@ p{
     background-color: transparent;
     color: #574c56;
     margin-left: 20px;
+    transition: all 1s ease 0s;
 }
 
 .clothing__button3{
     width: 97%;
     margin-top: 20px;
-    height: 35px;
+    height: 45px;
     background-color: #716470;
     color: white;
     cursor: pointer;
     border: none;
     font-family: 'Horizon';
+    transition: all 1s ease 0s;
+}
+
+.clothing__button1:hover, .clothing__button2:hover{
+    border-radius: 20px;
 }
 
 .clothing__button3:hover{
-    background-color: #685c67;
+    background-color: #4d444c;
+    border-radius: 20px;
 }
 
 .clothing__button3:active{
@@ -273,11 +302,13 @@ p{
     padding: 16px 32px;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    transition: all 1s ease 0s;
 }
 
 .jewelry:hover{
-    background-color: #685c67;
+    background-color: #4d444c;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .jewelry:active{
@@ -320,11 +351,13 @@ p{
       padding: 16px 32px;
       text-decoration: none;
       font-family: 'Raleway', sans-serif;
+      transition: all 1s ease 0s;
   }
   
   .belt:hover{
-      background-color: #685c67;
-      cursor: pointer;
+    background-color: #4d444c;
+    cursor: pointer;
+    border-radius: 20px;
   }
   
   .belt:active{
@@ -367,11 +400,13 @@ p{
       padding: 16px 32px;
       text-decoration: none;
       font-family: 'Raleway', sans-serif;
+      transition: all 1s ease 0s;
   }
   
   .giftcard:hover{
-      background-color: #685c67;
-      cursor: pointer;
+    background-color: #4d444c;
+    cursor: pointer;
+    border-radius: 20px;
   }
   
   .giftcard:active{
@@ -472,7 +507,11 @@ textarea{
     color: #574c56;
     background-color: transparent;
     border-radius: 0px;
-    
+    transition: all 1s ease 0s;
+}
+
+.button-contact1:hover{
+    border-radius: 20px;
 }
 
 .button-contact2{
@@ -483,11 +522,13 @@ textarea{
     border-radius: 0px;
     cursor: pointer;
     border-style: none;
+    transition: all 1s ease 0s;
 }
 
 .button-contact2:hover{
-    background-color: #685c67;
     cursor: pointer;
+    background-color: #4d444c;
+    border-radius: 20px;
 }
 
 .button-contact2:active{
